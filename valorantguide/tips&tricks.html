@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Lyana's Guide on Valorant</title>
+    <link href="https://fonts.googleapis.com/css?family=Chelsea+Market" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet">
+    <style>
+        body {
+            font-size: 1rem;
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+            line-height: 1.4;
+            background-color: #000000;
+        }
+        body li, p{
+            font-family: 'Dosis';
+            font-size: 18px;
+            line-height: 1.5em;
+        }
+
+        h1,
+        h2
+        {
+            color: #bd3944;
+            font-family: 'Chelsea Market', 'Franklin Gothic Medium', sans-serif;
+        }
+        h3{
+            font-family: 'Chelsea Market', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 23px;
+            text-align: center;
+        }
+
+        .red {
+            color: #fd4556;
+        }
+
+        figure {
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 5px;
+            margin: 1em;
+        }
+
+        header{
+            height: 180px;
+            background-image: url(pics/val_bannersmall.png);
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-position: center top;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+        }
+
+        #header h1{
+            color: #fffbf5;
+            font-size: 2rem;
+            padding: 0 1rem;
+            margin: 80px 0;
+            font-family: 'Chelsea Market', 'Franklin Gothic Medium', sans-serif;
+            text-align: center;
+        }
+
+        hr{
+            margin: 30px 0;
+        }
+
+        footer {
+            background-color: #000000;
+            padding: 1em;
+            text-align: center;
+        }
+
+        footer p{
+            color: #fffbf5;
+        }
+
+        #wrapper section {
+            padding: 0 1rem;
+        }
+
+        #wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 0;
+        }
+        article {
+            background-color: #fffbf5;
+        }
+        .main-h2{
+                padding: 1rem 1rem 0 1rem;
+                margin: 0;
+                font-size: 2em;
+            }
+        .tothetopbutton {
+            border: 1px solid rgba(0,0,0,0.2);
+            border-radius: 15px;
+            text-align: center;
+            background-color: #53212b;
+            padding: 0.6em 0;
+            max-width: 20em;
+            margin: 1em auto;
+        }
+        .tothetopbutton a {
+            color: white;
+            padding: 0;
+            font-size: 17px;
+            text-decoration: none;
+        }
+        .tothetopbutton a:hover {
+            color: #fd4556;
+        }
+        .tothetopbutton a:active {
+            color: #fd4556;
+        }
+
+        a:link {
+            color: white;
+        }
+        a:hover {
+            color: #fd4556;
+        }
+        a:active {
+            color: #fd4556;
+        }
+        
+        .navbar{
+        padding: 0;
+        font-size: 18px;
+        position: relative;
+        z-index: 1000;
+        }
+        .main-nav{
+            list-style-type: none;
+            display: none;
+            position: absolute; 
+            top: 60px; 
+            right: 0;
+            background-color: #000000;
+        }
+        .main-nav.active {
+            display: block;
+        }
+        .hamburger-icon{
+            max-width: 100%;
+            width: 45px;
+            height: 35px;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .navbar ul li{
+            list-style: none;
+            margin: auto;
+            padding: 0.5em;
+            width: 100%;
+        }
+        .nav-links{
+            color: #fffbf5;
+            display: block;
+            padding: 0.2em;
+            font-size: 1.2rem;
+            font-weight: bolder;
+            text-align: center;
+            margin: auto;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        .navbar-toggle{
+            position: absolute;
+            top: 12px;
+            right: 30px;
+            cursor: pointer;
+            color: #fffbf5;
+            font-weight: bold;
+        }
+        .youtube{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 1em auto;
+        }
+        iframe{
+            max-width: 100%;
+            border: 0;
+        }
+        @supports (display:grid){
+            .wrapper > *{
+            margin: 0;
+            }
+            }
+
+        @media screen and (min-width: 1100px){
+            header{
+            background-size: auto;
+            height: 300px;
+            padding: 0;
+            }
+            #header h1{
+                font-size: 4rem;
+                padding: 0 1rem;
+                text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+            }
+            .main-h2{
+                padding: 1rem 1rem 0 1rem;
+                margin: 0;
+                font-size: 2em;
+            }
+            .navbar{
+            display: flex;
+            height: 70px;
+            padding-bottom: 0;
+            justify-content: space-between;
+            align-items: center;
+            }
+            .navbar-toggle{
+                display: none;
+            }
+            .main-nav{
+                display: flex;
+                margin-right: 30px;
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+            .navbar ul{
+                margin:0;
+                padding-bottom: 1em;
+                list-style: none;
+                text-align: center;
+                width: 100%;
+            }
+            .navbar ul li{
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                color: #fffbf5;
+            }
+            .nav-links{
+                font-size: 1.7em;
+            }
+            .youtube{
+                display: flex;
+                flex-wrap: wrap;
+                text-align: center;
+                justify-content: center;
+            }
+            .youtube{
+                display: grid;
+                grid-gap: 30px;
+                grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+                grid-auto-rows: minmax(100px, auto);
+            }
+            .youtube-video{
+                max-width: 100%;
+                padding: 10px;
+            }
+            .youtube h3{
+                font-size: 18px;
+                text-align: center;
+            }
+            iframe{
+                max-width: 100%;
+                border: 0;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <img class="hamburger-icon" src="pics/hamburger-menu.png" alt="Menu">
+            </span>
+            <ul class="main-nav" id="js-menu">
+                <li><a href="home.html" class="nav-links">Home</a></li>
+                <li><a href="agents&roles.html" class="nav-links">Agents & Roles</a></li>
+                <li><a href="maps.html" class="nav-links">Maps</a></li>
+                <li><a href="tips&tricks.html" class="nav-links">Tips & Tricks</a></li>
+            </ul>
+        </nav>
+        <script>
+            let mainNav = document.getElementById('js-menu');
+            let navBarToggle = document.getElementById('js-navbar-toggle');
+            navBarToggle.addEventListener('click', function (){
+                mainNav.classList.toggle('active');
+            });
+        </script>
+        <header id="header">
+            <h1>Lyana's Guide on Valorant</h1>
+        </header>
+        <hr>
+        <div id="content">
+            <article id="top">
+                <h2 class="main-h2">Tips & Tricks</h2>
+                    <section>
+                        <h2>List of Videos to Help You</h2>
+                        <div class="youtube">
+                            <div class="youtube-video">
+                        <iframe width="498" height="280" src="https://www.youtube.com/embed/V34npsJTqfU?si=mERCRKjCyYRt996o" title="The ULTIMATE Beginners Guide for Valorant 2023" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <h3>The ULTIMATE Beginners Guide for Valorant 2023</h3>
+                            </div>
+
+                            <div class="youtube-video">
+                        <iframe width="498" height="280" src="https://www.youtube.com/embed/7jtDGa59Mkw?si=MyfqqQLr-RPhWMhM" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <h3>Get PERFECT Aim! (BEST METHOD) | Valorant Aim Guide</h3>
+                            </div>
+
+                            <div class="youtube-video">
+                        <iframe width="498" height="280" src="https://www.youtube.com/embed/1hsg3Jp9SSk?si=pokgDYhXt6K_-ISg" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <h3>How to Find Your *MAIN AGENT* in VALORANT! (Playstyle Guide) *2022*</h3>
+                            </div>
+
+                            <div class="youtube-video">
+                        <iframe width="498" height="280" src="https://www.youtube.com/embed/ROoSZZdwE04?si=rlRjO26LphXqSBCd" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <h3>Master Movement in Valorant | Valorant Movement Guide</h3>
+                            </div>
+
+                            <div class="youtube-video">
+                        <iframe width="498" height="280" src="https://www.youtube.com/embed/NlBNSwrSgMg?si=Xkk1G3VLEctaCtTe" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <h3>The COMPLETE VALORANT Terminology Tier List: Become an INCREDIBLE Communicator - Valorant Guide</h3>
+                            </div>
+
+                            <div class="youtube-video">
+                        <iframe width="498" height="280" src="https://www.youtube.com/embed/d8CXBLRgP-A?si=PwXHwLhmkE1a-FP4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <h3>Find your PERFECT Sensitivity and Optimal Settings! | SEN Tenz</h3>
+                            </div>
+
+                        </div>
+                    </section>
+            </article>
+        </div>
+        <div class="tothetopbutton">
+            <a style href="#top">Back to the Top</a>
+        </div>
+        <footer id="footer">
+            <p>&copy; Lyana Lieu 2023</p>
+        </footer>
+    </div>
+</body>
+
+</html>

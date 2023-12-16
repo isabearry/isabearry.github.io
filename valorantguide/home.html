@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Lyana's Guide on Valorant</title>
+    <link href="https://fonts.googleapis.com/css?family=Chelsea+Market" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000000;
+        }
+        body li, p{
+            font-family: 'Dosis', sans-serif;
+            font-size: 18px;
+            line-height: 1.5em;
+        }
+
+        h1,h2,h3{
+            color: #bd3944;
+            font-family: 'Chelsea Market', 'Franklin Gothic Medium', sans-serif;
+        }
+
+        .red{
+            color: #fd4556;
+        }
+
+        header{
+            height: 180px;
+            background-image: url(pics/val_bannersmall.png);
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-position: center top;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+        }
+
+        #header h1{
+            color: #fffbf5;
+            font-size: 2rem;
+            padding: 0 1rem;
+            margin: 80px 0;
+            font-family: 'Chelsea Market', 'Franklin Gothic Medium', sans-serif;
+            text-align: center;
+        }
+
+        hr{
+            margin: 30px 0;
+        }
+
+        footer{
+            background-color: #000000;
+            padding: 1em;
+            text-align: center;
+        }
+
+        footer p{
+            color: #fffbf5;
+        }
+
+        #wrapper section {
+            padding: 0 1rem;
+        }
+
+        #wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 0;
+        }
+
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        h2.full_width {
+            padding: 1rem 1rem 0 1rem;
+            margin: 0;
+            font-size: 2em;
+        }
+
+        article {
+            background-color: #fffbf5;
+        }
+
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .tothetopbutton {
+            border: 1px solid rgba(0,0,0,0.2);
+            border-radius: 15px;
+            text-align: center;
+            background-color: #53212b;
+            padding: 0.6em 0;
+            max-width: 20em;
+            margin: 1em auto;
+        }
+        .tothetopbutton a {
+            color: white;
+            padding: 0;
+            font-size: 17px;
+            text-decoration: none;
+        }
+        .tothetopbutton a:hover {
+            color: #fd4556;
+        }
+        .tothetopbutton a:active {
+            color: #fd4556;
+        }
+
+        a:link {
+            color: white;
+        }
+        a:hover {
+            color: #fd4556;
+        }
+        a:active {
+            color: #fd4556;
+        }
+
+        aside{
+            background-color: rgb(70, 70, 70, 0.5);
+        }
+
+        aside p{
+            color: #fffbf5;
+        }
+        aside h2{
+            padding-top: 0.5em;
+        }
+        
+        .navbar{
+        padding: 0;
+        font-size: 18px;
+        position: relative;
+        z-index: 1000;
+        }
+        .main-nav{
+            list-style-type: none;
+            display: none;
+            position: absolute; 
+            top: 60px; 
+            right: 0;
+            background-color: #000000;
+        }
+        .main-nav.active {
+            display: block;
+        }
+        .hamburger-icon{
+            max-width: 100%;
+            width: 45px;
+            height: 35px;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .navbar ul li{
+            list-style: none;
+            margin: auto;
+            padding: 0.5em;
+            width: 100%;
+        }
+        .nav-links{
+            color: #fffbf5;
+            display: block;
+            padding: 0.2em;
+            font-size: 1.2rem;
+            font-weight: bolder;
+            text-align: center;
+            margin: auto;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        .navbar-toggle{
+            position: absolute;
+            top: 12px;
+            right: 30px;
+            cursor: pointer;
+            color: #fffbf5;
+            font-weight: bold;
+        }
+
+        /* first grid breakpoint */
+        @media screen and (min-width:768px) {
+            header{
+                height: 250px;
+                background-size: auto;
+                margin: 0;
+            }
+            #header h1{
+                font-size:3em;
+                padding:1rem;
+                text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+            }
+
+        #content{
+            display: grid;
+            grid-template-columns: 66% 34%;
+        }
+        article{
+            grid-column: 1/2;
+        }
+        aside{
+            grid-column: 2/3;
+        }
+        .main-nav{
+            list-style-type: none;
+            display: none;
+            position: absolute; 
+            top: 60px; 
+            right: 0;
+            background-color: #000000;
+        }
+        .main-nav.active {
+            display: block;
+        }
+        .hamburger-icon img{
+            max-width: 100%;
+            width: 35px;
+            height: 35px;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .navbar ul li{
+            list-style: none;
+            margin: auto;
+            padding: 0.5em;
+            width: 100%;
+        }
+        .nav-links{
+            color: #fffbf5;
+            display: block;
+            padding: 0.2em;
+            font-size: 1.2rem;
+            font-weight: bolder;
+            text-align: center;
+            margin: auto;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        .navbar-toggle{
+            position: absolute;
+            top: 12px;
+            right: 30px;
+            cursor: pointer;
+            color: #fffbf5;
+            font-weight: bold;
+        }
+        }
+
+        /* second grid breakpoint */
+        @media screen and (min-width: 1100px){
+            article{
+                display: grid;
+                grid-template-columns: 50% 50%;
+            }
+            header{
+            background-size: auto;
+            height: 300px;
+            padding: 0;
+            }
+            #header h1{
+                font-size: 4rem;
+                padding: 0 1rem;
+            }
+            h2.full_width{
+                grid-column: 1/3;
+                
+            }
+            .navbar{
+            display: flex;
+            height: 70px;
+            padding-bottom: 0;
+            justify-content: space-between;
+            align-items: center;
+            }
+            .navbar-toggle{
+                display: none;
+            }
+            .main-nav{
+                display: flex;
+                margin-right: 30px;
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+            .navbar ul{
+                margin:0;
+                padding-bottom: 1em;
+                list-style: none;
+                text-align: center;
+                width: 100%;
+            }
+            .navbar ul li{
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                color: #fffbf5;
+            }
+            .nav-links{
+                font-size: 1.7em;
+            }
+    }
+    </style>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                
+                    <img class="hamburger-icon" src="pics/hamburger-menu.png" alt="Menu">
+                
+            </span>
+            <ul class="main-nav" id="js-menu">
+                <li><a href="home.html" class="nav-links">Home</a></li>
+                <li><a href="agents&roles.html" class="nav-links">Agents & Roles</a></li>
+                <li><a href="maps.html" class="nav-links">Maps</a></li>
+                <li><a href="tips&tricks.html" class="nav-links">Tips & Tricks</a></li>
+            </ul>
+        </nav>
+        <script>
+    let mainNav = document.getElementById('js-menu');
+    let navBarToggle = document.getElementById('js-navbar-toggle');
+    navBarToggle.addEventListener('click', function (){
+        mainNav.classList.toggle('active');
+    });
+        </script>
+        <header id="header">
+            <h1>Lyana's Guide on Valorant</h1>
+        </header>
+        <hr>
+        <div id="content">
+            <article id="top">
+                <h2 class="full_width">Home</h2>
+                <div class="half_width_column1">
+                    <section>
+                        <h2>What is Valorant?</h2>
+                        <img src="pics/val_main.webp" alt="Valorant Main Page">
+                        <p><strong class="red">Valorant</strong> is a popular first-person tactical shooter (FPS) video game developed and published by Riot Games. It was officially released on June 2, 2020. The game is primarily a team-based multiplayer shooter and is known for its competitive gameplay, tactical elements, and emphasis on teamwork.</p>
+                        <img src="pics/val_action.jpg" alt="Valorant Gameplay">
+                        <p>In Valorant, two teams of five players each compete against each other. One team assumes the role of "Attackers," whose objective is to plant a bomb (referred to as the Spike) at designated sites on the map, while the other team plays as "Defenders" and aims to prevent the attackers from planting the Spike or defuse it if it has been planted.</p>
+                        <p>What sets Valorant apart from other first-person shooters is the inclusion of unique characters known as "Agents." Each Agent has a distinct set of abilities, including two basic abilities, one signature ability, and one ultimate ability. These abilities can range from deploying smoke screens and healing allies to creating barriers and teleportation. Players must choose their Agent and use their abilities strategically to gain an advantage.</p>
+                        <p>Valorant places a strong emphasis on tactical gameplay, communication, and teamwork, making it a popular choice for esports competitions. The game has gained a significant player base and a competitive scene, with regular updates and new content to keep the gameplay fresh and engaging.</p>
+                    </section>
+                </div>
+                <div class="half_width_column2">
+                    <section>
+                        <h2>The Lore</h2>
+                        <p>Valorant features an evolving and intricate lore that adds depth to the game's world and characters. The lore is gradually unveiled through cinematics, character interactions, and the game's official website. As of my last knowledge update in September 2021, here are some key elements of Valorant's lore:</p>
+                        <ul>
+                            <li><strong class="red">Radianite:</strong> a mysterious and powerful energy source that plays a central role in the game's lore. It can be harnessed and manipulated to create various superhuman abilities, and it's the source of the unique powers possessed by the game's Agents.</li>
+                            <li><strong class="red">Radiant:</strong> individuals who have been affected by Radianite, giving them extraordinary abilities. Each Agent in Valorant is a Radiant, and their unique abilities stem from their exposure to Radianite.</li>
+                            <li><strong class="red">VALORANT Protocol:</strong> VALORANT is the organization responsible for recruiting and deploying Radiant individuals (the Agents) to combat a global threat known as the "Radiant Crisis." This crisis involves mysterious events and threats associated with Radianite.</li>
+                            <li><strong class="red">Duelists and Initiators:</strong> agents that are classified into different categories based on their abilities and roles within VALORANT. Duelists are known for their offensive abilities and combat prowess, while Initiators excel at disrupting enemy positions and gathering information.</li>
+                            <li><strong class="red">Kingdom Corporation:</strong> a major organization in the Valorant lore, associated with Radianite research. Some of the game's Agents have connections to Kingdom, either as former employees or individuals with personal interests in Radianite research.</li>
+                            <li><strong class="red">Conflicts and Alliances:</strong> the lore of Valorant hints at conflicts and alliances among the Agents. There are rivalries, friendships, and personal agendas that play out as the narrative unfolds.</li>
+                            <li><strong class="red">Mysterious Antagonists:</strong> there are shadowy and enigmatic figures mentioned in the lore, often associated with the Radiant Crisis. These antagonists are yet to be fully revealed and remain a central mystery in the game's ongoing story.</li>
+                        </ul>
+                    </section>
+                    <br>
+                </div>
+            </article>
+            <aside>
+                <section>
+                    <h2 style="font-size: 2em;">What's New?</h2>
+                    <img src="pics/Valorant-Iso.webp" alt="Agent Iso">
+                    <p><strong class="red">Iso</strong> is an upcoming Agent in VALORANT and the seventh Duelist to be released on October 31st, 2023.</p>
+                    <br>
+                    <img src="pics/Loading_Screen_Sunset.webp" alt="Loading Screen of Sunset">
+                    <p><strong class="red">Sunset</strong> was recently released in Episode 7 Act 2 on August 29, 2023 and is the tenth map of VALORANT.</p>
+                    <br>
+                </section>
+            </aside>
+        </div>
+        <div class="tothetopbutton">
+            <a style href="#top">Back to the Top</a>
+        </div>
+        <footer id="footer">
+            <p>&copy; Lyana Lieu 2023</p>
+        </footer>
+    </div>
+</body>
+
+</html>

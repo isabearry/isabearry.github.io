@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Lyana's Guide on Valorant</title>
+    <link href="https://fonts.googleapis.com/css?family=Chelsea+Market" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet">
+    <style>
+        body {
+            font-size: 1rem;
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+            line-height: 1.4;
+            background-color: #000000;
+        }
+        body li, p{
+            font-family: 'Dosis';
+            font-size: 18px;
+            line-height: 1.5em;
+        }
+
+        h1,
+        h2,
+        h3{
+            color: #bd3944;
+            font-family: 'Chelsea Market', 'Franklin Gothic Medium', sans-serif;
+        }
+
+        .red {
+            color: #fd4556;
+        }
+
+        figure {
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 5px;
+            margin: 1em;
+        }
+
+        header{
+            height: 180px;
+            background-image: url(pics/val_bannersmall.png);
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-position: center top;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+        }
+
+        #header h1{
+            color: #fffbf5;
+            font-size: 2rem;
+            padding: 0 1rem;
+            margin: 80px 0;
+            font-family: 'Chelsea Market', 'Franklin Gothic Medium', sans-serif;
+            text-align: center;
+        }
+
+        hr{
+            margin: 30px 0;
+        }
+
+        footer {
+            background-color: #000000;
+            padding: 1em;
+            text-align: center;
+        }
+
+        footer p{
+            color: #fffbf5;
+        }
+
+        #wrapper section {
+            padding: 0 1rem;
+        }
+
+        #wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 0;
+        }
+
+        article {
+            background-color: #fffbf5;
+        }
+        .main-h2{
+                padding: 1rem 1rem 0 1rem;
+                margin: 0;
+                font-size: 1.8em;
+            }
+        .tothetopbutton {
+            border: 1px solid rgba(0,0,0,0.2);
+            border-radius: 15px;
+            text-align: center;
+            background-color: #53212b;
+            padding: 0.6em 0;
+            max-width: 20em;
+            margin: 1em auto;
+        }
+        .tothetopbutton a {
+            color: white;
+            padding: 0;
+            font-size: 17px;
+            text-decoration: none;
+        }
+        .tothetopbutton a:hover {
+            color: #fd4556;
+        }
+        .tothetopbutton a:active {
+            color: #fd4556;
+        }
+
+        a:link {
+            color: white;
+        }
+        a:hover {
+            color: #fd4556;
+        }
+        a:active {
+            color: #fd4556;
+        }
+        
+        .navbar{
+        padding: 0;
+        font-size: 18px;
+        position: relative;
+        z-index: 1000;
+}
+        .main-nav{
+            list-style-type: none;
+            display: none;
+            position: absolute; 
+            top: 60px; 
+            right: 0;
+            background-color: #000000;
+        }
+        .main-nav.active {
+            display: block;
+        }
+        .hamburger-icon{
+            max-width: 100%;
+            width: 45px;
+            height: 35px;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .navbar ul li{
+            list-style: none;
+            margin: 0;
+            padding: 0.5em;
+            width: 100%;
+        }
+        .nav-links{
+            color: #fffbf5;
+            display: block;
+            padding: 0.2em;
+            font-size: 1.2rem;
+            font-weight: bolder;
+            text-align: center;
+            margin: auto;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        .navbar-toggle{
+            position: absolute;
+            top: 12px;
+            right: 30px;
+            cursor: pointer;
+            color: #fffbf5;
+            font-weight: bold;
+        }
+        .captionimg div{
+            box-shadow: 0 3px 8px 0 rgba(65, 64, 63, 0.6);
+            border: 3px solid #fd4556;
+            border-radius: 5px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            margin: 1em auto;
+            max-width: 100%;
+            width: 250px;
+            background-color: rgba(189, 189, 189, 0.5);
+        }
+        .role{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+        .role h3{
+            font-size: 1.5em;
+        }
+        .role_icon{
+            max-width: 100%;
+            width: 35px;
+            height: 35px;
+        }
+        .role_icon2{
+            max-width: 100%;
+            width: 150px;
+            height: 150px;
+            margin: 1em auto;
+            display: block;
+        }
+        .agent{
+            max-width: 100%;
+            height: 420px;
+            width: 300px;
+            box-shadow: 0 3px 8px 0 rgba(65, 64, 63, 0.6);
+            border: 3px solid #fd4556;
+        }
+        .agent p{
+            font-size: 1.3em;
+            padding: 0 0 12px 0;
+            margin: 0;
+        }
+        .agent h3{
+            padding: 0;
+            margin: 8px;
+            max-width: 100%;
+        }
+        .agent-icon{
+            max-width: 100%;
+            width: 50%;
+            height: 50%;
+            margin: 10px auto
+        }
+        .agent figure{
+            margin: 0;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: none;
+            padding: 10px;
+            max-width: 100%;
+        }
+        #controller-panels, #duelist-panels, #initiator-panels, #sentinel-panels{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 35px;
+            margin: 30px auto;
+        }
+        #controller-panels, #duelist-panels, #initiator-panels, #sentinel-panels{
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-auto-rows: minmax(100px, auto);
+        }
+        #controller-panels > *, #duelist-panels > *, #initiator-panels > *, #sentinel-panels > *{
+            background-color: rgba(189, 189, 189, 0.5);
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .flag{
+                max-width: 100%;
+                width: 90px;
+                margin: 0 auto;
+            }
+        @supports (display:grid){
+                .wrapper > *{
+                    margin: 0;
+                }
+            }
+        @media screen and (min-width: 1100px){
+            header{
+                background-size: auto;
+                height: 300px;
+                padding: 0;
+            }
+            #header h1{
+                font-size: 4rem;
+                padding: 0 1rem;
+                text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+            }
+            .navbar{
+                display: flex;
+                height: 70px;
+                padding-bottom: 0;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .navbar-toggle{
+                display: none;
+            }
+            .main-nav{
+                display: flex;
+                margin-right: 30px;
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+            .navbar ul{
+                margin:0;
+                padding-bottom: 1em;
+                list-style: none;
+                text-align: center;
+                width: 100%;
+            }
+            .navbar ul li{
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                color: #fffbf5;
+            }
+            .nav-links{
+                font-size: 1.7em;
+            }
+            .main-h2{
+                padding: 1rem 1rem 0 1rem;
+                margin: 0;
+                font-size: 2em;
+            }
+            .agent h3, .role h3{
+                font-size: 22px;
+            }
+            .agent p{
+                font-size: 20px;
+            }
+            .role{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            .role_icon{
+                max-width: 100%;
+                height: 40px;
+                width: 40px;
+            }
+            .role_icon2{
+                max-width: 100%;
+                height: 150px;
+                width: 150px;
+            }
+            .captionimg{
+                display: flex;
+                justify-content: space-evenly;
+            }
+            .captionimg div{
+                max-width: 100%;
+                width: 20%;
+            }
+            .agent-icon{
+                max-width: 100%;
+                max-height: 100%;
+                width: 50%;
+                margin: 0 auto;
+                padding: 5px;
+            }
+            .flag{
+                max-width: 100%;
+                max-height: 100%;
+                width: 80px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <img class="hamburger-icon" src="pics/hamburger-menu.png" alt="Menu">
+            </span>
+            <ul class="main-nav" id="js-menu">
+                <li><a href="home.html" class="nav-links">Home</a></li>
+                <li><a href="agents&roles.html" class="nav-links">Agents & Roles</a></li>
+                <li><a href="maps.html" class="nav-links">Maps</a></li>
+                <li><a href="tips&tricks.html" class="nav-links">Tips & Tricks</a></li>
+            </ul>
+        </nav>
+        <script>
+            let mainNav = document.getElementById('js-menu');
+            let navBarToggle = document.getElementById('js-navbar-toggle');
+            navBarToggle.addEventListener('click', function (){
+                mainNav.classList.toggle('active');
+            });
+        </script>
+        <header id="header">
+            <h1>Lyana's Guide on Valorant</h1>
+        </header>
+        <hr>
+        <div id="content">
+            <article id="top">
+                <h2 class="main-h2">Agents & Roles</h2>
+                    <section>
+                        <h2>Summary</h2>
+                        <p>Five agents are immediately available for players to use: <strong class="red">Brimstone, Jett, Phoenix, Sage, and Sova.</strong></p>
+                        <p>Agents can be unlocked through the following methods:
+                            one agent for 1000 <strong class="red">Valorant Points (VP)</strong> or 8,000 <strong class="red">Kingdom Credits (KC)</strong> in Agent Store,
+                            Kingdom Credits can only be used after Agent Recruitment Event has ended, two agents by progressing through Welcome Contract in Tiers 5 and 10, or
+                            all agents unlocked via linking to Xbox Game Pass until their subscription has ended.</p>
+
+                        <div class="captionimg">
+                        <div><img src="pics/ValorantPointsSymbol.jpg" alt="Valorant Points">
+                        <p>Valorant Points (VP)</p>
+                        </div>
+
+                        <div><img src="pics/KingdomPointsSymbol.jpg" alt="Kingdom Points">
+                        <p>Kingdom Points (KP)</p>
+                        </div>
+                        </div>
+                        <p>Each agent has 100 base HP (increased with shields by up to 50) and four abilities, including a Signature and an Ultimate ability. Depending on their abilities and playstyle, agents are assigned to one of four roles determined by the game:</p>
+                        <ul>
+                            <li><img class="role_icon" src="pics/ControllerClassSymbol.jpg" alt="controller symbol"> <strong class="red">Controllers</strong> are experts in slicing up dangerous territory to set their team up for success.</li>
+                            <li><img class="role_icon" src="pics/DuelistClassSymbol.jpg" alt="duelist symbol"> <strong class="red">Duelists</strong> are self-sufficient fraggers who their team expects, through abilities and skills, to get high frags and seek out engagements first.</li>
+                            <li><img class="role_icon" src="pics/InitiatorClassSymbol.jpg" alt="intiator symbol"> <strong class="red">Initiators</strong> challenge angles by setting up their team to enter contested ground and push defenders away.</li>
+                            <li><img class="role_icon" src="pics/SentinelClassSymbol.jpg" alt="sentinel symbol"> <strong class="red">Sentinels</strong> are defensive experts who can lock down areas and watch flanks, both on attacker and defender rounds.</li>
+                        </ul>
+                        </section>
+                        
+                        <br>
+        
+                    <section>
+                        <h2 style="font-size: 1.8em;">Agents</h2>
+                        <div class="role">
+                            <img class="role_icon2" src="pics/ControllerClassSymbol.jpg" alt="Controller Symbol">
+                            <h3>Controllers</h3>
+                        </div>
+                    <div id="controller-panels">
+                        <div class="agent">
+                            <figure>
+                                <img class="agent-icon" src="pics/Astra_icon.webp" alt="Astra">
+                                <h3>Astra<br>(Efia Danso)</h3>
+                                <p>No. 16</p>
+                                <img class="flag" src="pics/Flag_of_Ghana.svg.png" alt="Flag of Ghana">
+                            </figure>
+                        </div>
+                        <div class="agent">
+                            <figure>
+                                <img class="agent-icon" src="pics/Brimstone_icon.webp" alt="Brimstone">
+                                <h3>Brimstone<br>(Liam Byrne)</h3>
+                                <p>No. 1</p>
+                                <img class="flag" src="pics/1200px-Flag_of_the_United_States.svg.webp" alt="Flag of United States">
+                            </figure>
+                        </div>
+                        <div class="agent">
+                            <figure>
+                                <img class="agent-icon" src="pics/Harbor_icon.webp" alt="Harbor">
+                                <h3>Harbor<br>(Varun Batra)</h3>
+                                <p>No. 21</p>
+                                <img class="flag" src="pics/Flag_of_India.svg.png" alt="Flag of India">
+                            </figure>
+                        </div>
+                        <div class="agent">
+                            <figure>
+                                <img class="agent-icon" src="pics/Omen_icon.webp" alt="Omen">
+                                <h3>Omen<br>(John/Fred)</h3>
+                                <p>No. 3</p>
+                                <p>Unknown</p>
+                            </figure>
+                        </div>
+                        <div class="agent">
+                            <figure>
+                                <img class="agent-icon" src="pics/Viper_icon.webp" alt="Viper">
+                                <h3>Viper<br>(Sabine Callas)</h3>
+                                <p>No. 2</p>
+                                <img class="flag" src="pics/1200px-Flag_of_the_United_States.svg.webp" alt="Flag of United States">
+                            </figure>
+                        </div>
+                        </div>
+                    <br>
+                    <hr style="border: 1px dashed;">
+                    <div class="role">
+                        <img class="role_icon2" src="pics/DuelistClassSymbol.jpg" alt="Duelist Symbol">
+                        <h3>Duelists</h3>
+                    </div>
+                <div id="duelist-panels">
+                    <div class="agent">
+                        <figure>
+                            <img class="agent-icon" src="pics/Iso_icon.webp" alt="Iso">
+                            <h3>Iso<br>(Li Zhao Yu)</h3>
+                            <p>No. 24</p>
+                            <img class="flag" src="pics/Flag_of_the_People's_Republic_of_China.svg.png" alt="Flag of China">
+                        </figure>
+                    </div>
+                    <div class="agent">
+                        <figure>
+                            <img class="agent-icon" src="pics/Jett_icon.webp" alt="Jett">
+                            <h3>Jett<br>(Han Sunwoo)</h3>
+                            <p>No. 10</p>
+                            <img class="flag" src="pics/Flag_of_South_Korea.svg.png" alt="Flag of South Korea">
+                        </figure>
+                    </div>
+                    <div class="agent">
+                        <figure>
+                            <img class="agent-icon" src="pics/Neon_icon.webp" alt="Neon">
+                            <h3>Neon<br>(Tala Valdez)</h3>
+                            <p>No. 19</p>
+                            <img class="flag" src="pics/Flag_of_the_Philippines.svg.png" alt="Flag of Philippines">
+                        </figure>
+                    </div>
+                    <div class="agent">
+                        <figure>
+                            <img class="agent-icon" src="pics/Phoenix_icon.webp" alt="Phoenix">
+                            <h3>Phoenix<br>(Jamie Adeyemi)</h3>
+                            <p>No. 9</p>
+                            <img class="flag" src="pics/Flag_of_the_United_Kingdom_(1-2).svg.png" alt="Flag of UK">
+                        </figure>
+                    </div>
+                    <div class="agent">
+                        <figure>
+                            <img class="agent-icon" src="pics/Raze_icon.webp" alt="Raze">
+                            <h3>Raze<br>(Tayane Alves)</h3>
+                            <p>No. 12</p>
+                            <img class="flag" src="pics/125px-Flag_of_Brazil.svg.png" alt="Flag of Brazil">
+                        </figure>
+                    </div>
+                    <div class="agent">
+                        <figure>
+                            <img class="agent-icon" src="pics/Reyna_icon.webp" alt="Reyna">
+                            <h3>Reyna<br>(Zyanya Mondragón)</h3>
+                            <p>No. 11</p>
+                            <img class="flag" src="pics/Flag_of_Mexico.svg.png" alt="Flag of Mexico">
+                        </figure>
+                    </div>
+                    <div class="agent">
+                        <figure>
+                            <img class="agent-icon" src="pics/Yoru_icon.webp" alt="Yoru">
+                            <h3>Yoru<br>(Kiritani Ryo)</h3>
+                            <p>No. 15</p>
+                            <img class="flag" src="pics/Flag_of_Japan.svg.png" alt="Flag of Japan">
+                        </figure>
+                    </div>
+                    </div>
+                    <br>
+                    <hr style="border: 1px dashed;">
+                    <div class="role">
+                        <img class="role_icon2" src="pics/InitiatorClassSymbol.jpg" alt="Initiator Symbol">
+                        <h3>Initiators</h3>
+                    </div>
+                <div id="initiator-panels">
+                    <div class="agent">
+                        <figure>
+                            <img class="agent-icon" src="pics/Breach_icon.webp" alt="Breach">
+                            <h3>Breach<br>(Erik Torsten)</h3>
+                            <p>No. 13</p>
+                            <img class="flag" src="pics/Flag_of_Sweden.svg.png" alt="Flag of Sweden">
+                        </figure>
+                    </div>
+                    <div class="agent">
+                        <figure>
+                            <img class="agent-icon" src="pics/Fade_icon.webp" alt="Fade">
+                            <h3>Fade<br>(Hazal Eyletmez)</h3>
+                            <p>No. 20</p>
+                            <img class="flag" src="pics/Flag_of_Turkey.svg.png" alt="Flag of Turkey">
+                        </figure>
+                    </div>
+                    <div class="agent">
+                        <figure>
+                            <img class="agent-icon" src="pics/Gekko_icon.webp" alt="Gekko">
+                            <h3>Gekko<br>(Mateo Fuente)</h3>
+                            <p>No. 22</p>
+                            <img class="flag" src="pics/1200px-Flag_of_the_United_States.svg.webp" alt="Flag of United States">
+                        </figure>
+                    </div>
+                    <div class="agent">
+                        <figure>
+                            <img class="agent-icon" src="pics/KAYO_icon.webp" alt="Kayo">
+                            <h3>Kayo<br>(Kayo)</h3>
+                            <p>No. 17</p>
+                            <p>Alternate Timeline Earth</p>
+                        </figure>
+                    </div>
+                    <div class="agent">
+                        <figure>
+                            <img class="agent-icon" src="pics/Sova_icon.webp" alt="Sova">
+                            <h3>Sova<br>(Alexander Novikov)</h3>
+                            <p>No. 6</p>
+                            <img class="flag" src="pics/Flag_of_Russia.svg.png" alt="Flag of Russia">
+                        </figure>
+                    </div>
+                    <div class="agent">
+                        <figure>
+                            <img class="agent-icon" src="pics/Skye_icon.webp" alt="Skye">
+                            <h3>Skye<br>(Kirra Foster)</h3>
+                            <p>No. 14</p>
+                            <img class="flag" src="pics/Flag_of_Australia_(converted).svg.png" alt="Flag of Australia">
+                        </figure>
+                    </div>
+                    </div>
+                    <br>
+                    <hr style="border: 1px dashed;">
+                    <div class="role">
+                        <img class="role_icon2" src="pics/SentinelClassSymbol.jpg" alt="Sentinel Symbol">
+                        <h3>Sentinels</h3>
+                    </div>
+                <div id="sentinel-panels">
+                    <div class="agent">
+                        <figure>
+                            <img class="agent-icon" src="pics/Chamber_icon.webp" alt="Chamber">
+                            <h3>Chamber<br>(Vincent Fabron)</h3>
+                            <p>No. 18</p>
+                            <img class="flag" src="pics/Flag_of_France.svg.webp" alt="Flag of France">
+                        </figure>
+                    </div>
+                    <div class="agent">
+                        <figure>
+                            <img class="agent-icon" src="pics/Cypher_icon.webp" alt="Cypher">
+                            <h3>Cypher<br>(Amir El Amari)</h3>
+                            <p>No. 5</p>
+                            <img class="flag" src="pics/Flag_of_Morocco.svg.png" alt="Flag of Morocco">
+                        </figure>
+                    </div>
+                    <div class="agent">
+                        <figure>
+                            <img class="agent-icon" src="pics/Deadlock_icon.webp" alt="Deadlock">
+                            <h3>Deadlock<br>(Iselin)</h3>
+                            <p>No. 23</p>
+                            <img class="flag" src="pics/Flag_of_Norway.svg.png" alt="Flag of Norway">
+                        </figure>
+                    </div>
+                    <div class="agent">
+                        <figure>
+                            <img class="agent-icon" src="pics/Killjoy_icon.webp" alt="Killjoy">
+                            <h3>Killjoy<br>(Klara Böhringer)</h3>
+                            <p>No. 4</p>
+                            <img class="flag" src="pics/125px-Flag_of_Germany.svg.png" alt="Flag of Germany">
+                        </figure>
+                    </div>
+                    <div class="agent">
+                        <figure>
+                            <img class="agent-icon" src="pics/Sage_icon.webp" alt="Sage">
+                            <h3>Sage<br>(Wei Ling Ying)</h3>
+                            <p>No. 7</p>
+                            <img class="flag" src="pics/Flag_of_the_People's_Republic_of_China.svg.png" alt="Flag of China">
+                        </figure>
+                    </div>
+                    </div>
+                    </section>
+            </article>
+        </div>
+        <div class="tothetopbutton">
+            <a style href="#top">Back to the Top</a>
+        </div>
+        <footer id="footer">
+            <p>&copy; Lyana Lieu 2023</p>
+        </footer>
+    </div>
+</body>
+
+</html>
